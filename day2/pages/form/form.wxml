@@ -1,0 +1,72 @@
+<view class="head">
+  <view class="section">
+    <view class="month btn {{changeId==0? 'active':''}}" bindtap='change' data-id='0'>
+      月
+    </view>
+    <view class="year btn {{changeId==1? 'active':''}}" bindtap='change' data-id='1'>
+      年
+    </view>
+  </view>
+</view>
+<view class='tubiao' > 
+  <view class='one' hidden='{{changeId==0}}'>
+    <canvas canvas-id='lineCanvas1'></canvas>
+  </view>
+  <view class='two' hidden='{{changeId==1}}'>
+    <canvas canvas-id='lineCanvas'></canvas>
+  </view>
+</view>
+<view class='content'>
+  <view class="list">
+    <view class='listhead'>
+      <view class='out'>支出排行榜</view>
+    </view>
+    <view class='listbody'>
+        <view class="line" wx:for="{{chandeId==0?month.payRanks:year.payRanks}}">
+          <view class='imageBox'>
+            <image src='../../image/jishiben.png'></image>
+          </view>
+          <view class='right'>
+            <view class='floatL'>{{item.name}}{{item.rank}}</view>
+            <view class='floatR'>{{item.money}}</view>
+          </view>
+        </view>
+        <view class="line" wx:for="{{year.payRanks}}">
+          <view class='imageBox'>
+            <image src='../../image/jishiben.png'></image>
+          </view>
+          <view class='right'>
+            <view class='floatL'>{{item.name}}{{item.rank}}</view>
+            <view class='floatR'>{{item.money}}</view>
+          </view>
+        </view>
+        
+    </view>
+  </view>
+  <view class="list">
+    <view class='listhead'>
+      <view class='out'>收入排行榜</view>
+    </view>
+    <view class='listbody'>
+        <view class="line" wx:for="{{changeId==0?month.incomeRanks:year.incomeRanks}}">
+          <view class='imageBox'>
+            <image src='../../image/jishiben.png'></image>
+          </view>
+          <view class='right'>
+            <view class='floatL'>{{item.name}}{{item.rank}}</view>
+            <view class='floatR'>{{item.money}}</view>
+          </view>
+        </view>
+        <view class="line" wx:for="{{month.incomeRanks}}">
+          <view class='imageBox'>
+            <image src='../../image/jishiben.png'></image>
+          </view>
+          <view class='right'>
+            <view class='floatL'>{{item.name}}{{item.rank}}</view>
+            <view class='floatR'>{{item.money}}</view>
+          </view>
+        </view>
+        
+    </view>
+  </view>
+</view>

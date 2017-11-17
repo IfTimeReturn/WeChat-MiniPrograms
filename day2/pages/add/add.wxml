@@ -1,0 +1,52 @@
+<!--支出&收入 label  -->
+<view class="head">
+  <view class="section">
+    <view class="month btn {{changeId==0? 'active':''}}" bindtap='change' data-id='0'>
+      支出
+    </view>
+    <view class="year btn {{changeId==1? 'active':''}}" bindtap='change' data-id='1'>
+      收入
+    </view>
+  </view>
+</view>
+<!-- item list -->
+<view class='contentBox'>
+  <view class="item {{itemId===index? 'itemActive':'' }}" wx:for='{{changeId==0?payList:incomeList}}'bindTap='pick' data-id='{{index}}'>
+      {{item}}
+  </view>
+  <view class='clear'></view>
+  <form bindsubmit='formsubmit'> 
+   <view class='pickBox'>
+    <picker mode="date" start="2012-9-30" end="{{date}}" bindchange='changeDate' value='{date}'>
+      <view class='date'>
+        {{date}}
+      </view>      
+    </picker>
+     <!-- hidden="{{nowItem===''}}" -->
+      <view class='item nowItem' hidden="{{nowItem===''}}"> 
+         {{nowItem}} 
+      </view>
+       <input type='digit' placeholder='0.00' class='numInput' valu='{{money}}'>{{money}}</input> 
+       <view class='clear'></view>
+    </view>   
+     <view >
+      <input type='text' placeholder='备注' class='tips' value='{{tips}}' name='tips'>
+      {{tips}}
+      </input>
+    </view>
+    <view class='submit' form-type='submit'>
+      确认
+    </view> 
+  </form>
+</view>
+
+<!-- <view class='addItem'>
+  
+</view>
+<view class="btn-area">
+  <view class="body-view">
+    <text>{{text}}</text>
+    <button bindtap="add">add line</button>
+    <button bindtap="remove">remove line</button>
+  </view>
+</view> -->

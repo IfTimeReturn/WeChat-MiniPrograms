@@ -1,0 +1,94 @@
+.head{
+  height: 40px;
+  background: #ef9a9a;
+  border-top:1px solid silver; 
+}
+.section{
+  margin: 0 25%;
+}
+.btn{
+  background:  #ffcccb;
+  width: 48%;
+  float:left;
+  margin-top: 8px; 
+}
+.month{
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  border-radius: 10px 0 0 10px ; 
+  text-align: center;
+  color: rgba(255, 255, 255, 0.62)
+}
+.active{
+  background: #ba6b6c;
+  color: white;
+}
+.year{
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  border-radius:0 10px 10px 0; 
+  text-align: center;
+  color: rgba(255, 255, 255, 0.62)
+}
+.group{
+  margin-top: 10px;
+}
+.item{
+  font-size: 14px;
+  float: left;
+  background: #ef9a9a;
+  border-radius: 5px;
+  padding: 3px;
+  margin-left: 5px;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.62)
+}
+.pickBox{
+  margin-top: 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.62);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.62);
+  padding: 15px;
+  
+}
+picker{
+  float: left;
+  height: 30px;
+  line-height: 30px;
+}
+
+.nowItem{
+  margin: 0 60px;
+
+}
+.clear{
+  clear: both;
+}
+.numInput{
+  background: #ffcccb;
+  float: right;
+  margin-right: 90px;
+  
+  width: 35%;
+  
+}
+.tips{
+  background: #ffcccb;
+  color: rgba(0, 0, 0, 0.62);
+  margin-top: 10px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.submit{
+  background: #ef9a9a;
+  color: rgba(0, 0, 0, 0.62);
+  width: 80px; 
+  border-radius: 5px;
+  text-align: center;
+  margin: 40px 0 0 40%;
+ 
+}
+.itemActive{
+  background: #ef9a9a
+}
+.date{
+  color: rgba(0, 0, 0, 0.62);
+  padding-top: 5px;
+}

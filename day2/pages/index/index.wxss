@@ -1,0 +1,83 @@
+.poster{
+  float:left;
+  width: 25%;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+  color: silver;
+}
+.boder{
+  width: 24%;
+  border-right : 1px solid silver;
+}
+.math{
+  color: black;
+}
+.clear{
+  clear: both;
+}
+.math image{
+  width: 10px;
+  height: 10px;
+}
+.listbind{
+  border-top: 1px solid silver;
+}
+.list{
+  font-size: 14px;
+}
+.listhead{
+  height: 30px;
+  line-height: 30px;
+  background: #f0f0f0;
+}
+.date{
+  float:left;
+  margin-left: 20px;
+}
+.money{
+  float: right;
+  margin-right: 20px;
+}
+.line image{
+  width: 15px;
+  height: 15px;
+}
+.line{
+  position: relative;
+}
+.imageBox{
+  float: left;
+  margin-left: 10px;
+  margin-top: 3px;
+  position: absolute;
+}
+.right{
+  height: 20px;
+  border-bottom : 1px solid silver;
+  margin-left: 30px;
+}
+.floatL{
+  float: left;
+}
+.floatR{
+  float: right;
+  margin-right: 50px;
+}
+.delete{
+  float: right;
+  background: #f0f0f0;
+  padding: 0 5px;
+  position: absolute;
+  right: -48px;
+}
+.deleteBox{
+  left: -48px;
+}
+.contain{
+  overflow: hidden;
+  min-height: 100%;
+}
+page{
+  height: 100%;
+}

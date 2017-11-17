@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/add/add",
+    "pages/index/index",
+    
+    "pages/form/form"
+    
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "#ba6b6c",
+    "navigationBarBackgroundColor": "#ba6b6c",
+    "navigationBarTitleText": "记账宝",
+    "navigationBarTextStyle": "#ba6b6c"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/notebook.png",
+        "selectedIconPath": "image/notebook(1).png",
+        "text": "账本"
+      },
+     
+      {
+        "pagePath": "pages/add/add",
+        "iconPath": "image/writeDown.png",
+        "selectedIconPath": "image/writeDown(1).png",
+        "text": "记一笔"
+      },
+      {
+        "pagePath": "pages/form/form",
+        "iconPath": "image/data.png",
+        "selectedIconPath": "image/data(1).png",
+        "text": "表格"
+      }
+    ]
+  }
+}

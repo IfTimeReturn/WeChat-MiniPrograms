@@ -1,0 +1,77 @@
+.head{
+  height: 40px;
+  background: #ef9a9a;
+  border-top:1px solid silver; 
+}
+.section{
+  margin: 0 25%;
+}
+.btn{
+  background:  #ffcccb;
+  width: 48%;
+  float:left;
+  margin-top: 8px; 
+}
+.month{
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  border-radius: 10px 0 0 10px ; 
+  text-align: center;
+  color: rgba(255, 255, 255, 0.62)
+}
+.active{
+  background: #ba6b6c;
+  color: white;
+}
+.year{
+  border: 1px solid rgba(255, 255, 255, 0.56);
+  border-radius:0 10px 10px 0; 
+  text-align: center;
+  color: rgba(255, 255, 255, 0.62)
+}
+.one{
+  height: 300px;
+}
+.two{
+  height: 300px;
+}
+Canvas{
+  height: 300px;
+  width: 100%;
+}
+.list{
+  font-size: 14px;
+}
+.listhead{
+  height: 30px;
+  line-height: 30px;
+  background: #f0f0f0;
+}
+.out{
+  float:left;
+  margin-left: 20px;
+}
+.line image{
+  width: 15px;
+  height: 15px;
+}
+.line{
+  position: relative;
+  border-bottom: 1px solid silver;
+}
+.imageBox{
+  float: left;
+  margin-left: 10px;
+  margin-top: 3px;
+  position: absolute;
+}
+.right{
+  height: 20px;
+  margin-left: 30px;
+}
+.floatL{
+  float: left;
+}
+.floatR{
+  float: right;
+  margin-right: 50px;
+}

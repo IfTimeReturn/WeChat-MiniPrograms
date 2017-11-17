@@ -1,0 +1,56 @@
+<view class='contain' bindtap='clear'>
+<view class="section">
+  <view class="poster boder">
+    <picker mode="date" value="{{date}}" start="2009-01" bindchange="bindDateChange" fields="month">
+      <view class="picker">
+        {{date.Y}}年
+      </view>
+      <view class="math">
+        {{date.M}}月
+        <image src="../../image/shanjiao.png"></image>
+      </view>
+    </picker>
+  </view>
+  <view class="poster">
+    <view>月支出(元)</view>
+    <view class="math"> {{monthAccount.monthpay}}</view>
+  </view>
+  <view class="poster">
+    <view>
+      月收入（元）
+    </view>
+    <view class="math">{{monthAccount.monthincome}} </view>
+  </view>
+  <view class="poster">
+    <view>
+      结余
+    </view>
+    <view class="math"> {{monthAccount.blance}} </view>
+  </view>
+  <view class="clear"> </view>
+</view>
+<view class="listbind">
+  <view class="list " wx:for="{{zhangdan}}" bindtouchstart='bigtouchS'>
+    <view class='listhead'>
+      <view class='date'>{{item.date}}{{item.day}}</view>
+      <view class='money' hidden="{{item.come==' '}}">收入:{{item.income}}</view>
+      <view class='money' hidden="{{item.pay==' '}}">支出:{{item.pay}}</view>
+    </view>
+    <view class='listbody'>
+        <view class="line item.id==pickId?'deleteBox':''" wx:for='{{item.xiangmu}}' bindtouchend='touchM' data-id='{{index}}'>
+          <view class='imageBox'>
+            <image src='../../image/jishiben.png'></image>
+          </view>
+          <view class='right'>
+            <view class='floatL'>{{item.name}}</view>
+            <view class='delete' bindtap='delete'>删除</view>
+            <view class='floatR'>{{item.money}}</view>
+           
+           
+          </view>
+        </view>  
+    </view>
+  </view>
+ 
+</view>
+</view>
